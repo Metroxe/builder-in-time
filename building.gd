@@ -2,9 +2,9 @@ extends Area2D
 
 @export var fall_speed: float = 100.0
 @export var sprite_options: Array[Texture2D] = [
-	preload("res://art/zeus_0.png"),
-	preload("res://art/zeus_1.png"),
-	preload("res://art/zeus_2.png")
+	preload("res://art/a_1.png"),
+	preload("res://art/c_1.png"),
+	preload("res://art/t_1.png")
 ]
 
 var screen_size: Vector2
@@ -27,7 +27,7 @@ func _ready() -> void:
 	position.y = -50  # Start above the screen
 
 	# Adjust the scale of the sprite
-	sprite.scale = Vector2(0.25, 0.25)  # Adjust this value as needed
+	# sprite.scale = Vector2(0.25, 0.25)  # Adjust this value as needed
 
 func _process(delta: float) -> void:
 	if not is_collected:
