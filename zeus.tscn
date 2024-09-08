@@ -29,8 +29,8 @@ script = ExtResource("1_7qtcb")
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_88rrj")
 animation = &"walk"
-frame_progress = 0.923295
+frame_progress = 0.850908
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["player"]]
 position = Vector2(1, 1.5)
 shape = SubResource("RectangleShape2D_eywh2")
