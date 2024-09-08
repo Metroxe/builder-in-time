@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bejqykpb6d2av"]
+
+[ext_resource type="PackedScene" uid="uid://c5nwa3t8t58lr" path="res://zeus.tscn" id="1_jniy6"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Zeus" parent="." instance=ExtResource("1_jniy6")]
+position = Vector2(29, 446)

@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://c5nwa3t8t58lr"]
+
+[ext_resource type="Script" path="res://zeus.gd" id="1_7qtcb"]
+[ext_resource type="Texture2D" uid="uid://chfsdw0de8c6p" path="res://art/zeus_0.png" id="1_fu1lx"]
+[ext_resource type="Texture2D" uid="uid://cbtv3xovd2rfu" path="res://art/zeus_1.png" id="2_7a2uy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_88rrj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fu1lx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7a2uy")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eywh2"]
+size = Vector2(62, 59)
+
+[node name="Zeus" type="Area2D"]
+position = Vector2(0, 1)
+script = ExtResource("1_7qtcb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_88rrj")
+animation = &"walk"
+frame_progress = 0.923295
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1.5)
+shape = SubResource("RectangleShape2D_eywh2")
